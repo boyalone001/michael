@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    position: fixed;
+    background-color: rgb(38, 61, 61);
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: cursive;
+    margin-right: 360px;
+}
+
+.menu ul{
+    display:inline-flex;
+}
+.menu  ul li{
+    list-style-type: none;
+    margin-left: 7px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    font-weight:500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+.menu ul li a:hover{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    font-weight:500;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: all 0.1s ease;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+}
+.bto{
+    background-color: black;
+}
+
+body{
+    background-color: gray;
+}
+
+
+.img{
+    background: url(../BowlinG/img/mikee.png) no-repeat;
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+.img::before{
+    content:'';
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+.center{
+    position: absolute;
+    top:52%;
+    transform: translate(-50%-50%);
+    padding: 0, 20px;
+    text-align: center;
+    padding-left: 250px;
+}
+.center .title{
+    color: rgb(96, 250, 199);
+    font-size:65px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.center .SubTitle{
+    color: rgb(96, 250, 199);
+    font-size:50px;
+    font-weight: 800;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.center .btns{
+    margin-top: 20px;
+}
+.center .btns button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border:2px solid #fff;
+    font-size:20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+.center .btns button:first-child{
+    color:#fff;
+    background:none;
+}
+.center .btns button:first-child:hover{
+    color:black;
+    background:#fff;
+}
+
+.btns a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.btns a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.about{
+    margin-left: 320px;
+    position: absolute;
+    top:47%;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+}
+.serve{
+    font-weight: 600;
+    color: rgb(96, 250, 199);
+}
+.above{
+    font-size: 20px;
+    color: #fff;
+}
+.above ul li{
+    list-style-type: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.detail{
+    padding-top: 150px;
+    margin-left: 80px;
+    padding-bottom: 50px;
+}
+.ball2{
+    padding-top: 30px;
+}
+.ball3{
+    padding-top: 30px;
+}
+.ball4{
+    padding-top: 30px;
+}
+.ball5{
+    padding-top: 30px;
+}
+.boil1{
+    color: rgb(2, 41, 28);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.boil2{
+    color: rgb(2, 41, 28);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.boil3{
+    color: rgb(2, 41, 28);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.boil4{
+    color: rgb(2, 41, 28);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.boil5{
+    color: rgb(2, 41, 28);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.terms p{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    margin-left: 80px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.terms2 p{
+    position: absolute;
+    top: 57%;
+    color: #fff;
+    margin-left: 80px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.terms3 p{
+    position: absolute;
+    top: 64%;
+    color: #fff;
+    margin-left: 80px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.term p{
+    position: absolute;
+    top: 124%;
+    color: #fff;
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.term2 p{
+    position: absolute;
+    top: 132%;
+    color: #fff;
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.term3 p{
+    position: absolute;
+    top: 140%;
+    color: rgb(255, 255, 255);
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tern p{
+    position: absolute;
+    top: 124%;
+    color: #fff;
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tern2 p{
+    position: absolute;
+    top: 132%;
+    color: #fff;
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tern3 p{
+    position: absolute;
+    top: 140%;
+    color: rgb(255, 255, 255);
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.terp p{
+    position: absolute;
+    top: 184%;
+    color: #fff;
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.terp2 p{
+    position: absolute;
+    top: 192%;
+    color: #fff;
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.terp3 p{
+    position: absolute;
+    top: 200%;
+    color: rgb(255, 255, 255);
+    margin-left: 480px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.menu2 .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: cursive;
+    margin-left: 530px;
+    position: absolute;
+    top: 130%;
+}
+.bowl2{
+    position: absolute;
+    top: 123%;
+    margin-left: 585px;
+}
+
+.icons{
+    background-color:rgb(38, 61, 61);
+}
+.ict1{
+    margin-left: 50px;
+    padding-top: 80px;
+}
+.ict2{
+    margin-left: 50px;
+    padding-top: 20px;
+}
+.ict3{
+    margin-left: 50px;
+    padding-top: 20px;
+}
+.ict4{
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.ict1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ict2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ict3 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ict4 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact{
+    float: right;
+    position: absolute;
+    top:115%;
+    margin-left: 1000px;
+}
+.contact2{
+    float: right;
+    position: absolute;
+    top:175%;
+    margin-left: 1000px;
+}
+.contact3{
+    float: right;
+    position: absolute;
+    top:115%;
+    margin-left: 1000px;
+}
+.name{
+    padding-top: 20px;
+    color:#fff;
+    font-size: 16px;
+}
+h3{
+    color:#fff;
+    font-family: cursive;
+    font-size: 30px;
+}
+
